@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>for循环绑定按钮事件问题 | korilo&#39;s blog</title>
+    <meta name="generator" content="VuePress 1.4.1">
+    <link rel="icon" href="/blog/assets/img/favicon.ico">
+    <meta name="description" content="vuepress个人博客">
+    <meta name="keywords" content="vuepress,前端学习">
+    <meta name="author" content="陈大彬/korilo">
+    <link rel="preload" href="/blog/assets/css/0.styles.52236521.css" as="style"><link rel="preload" href="/blog/assets/js/app.4037ec45.js" as="script"><link rel="preload" href="/blog/assets/js/2.31f4a6aa.js" as="script"><link rel="preload" href="/blog/assets/js/7.40f02be7.js" as="script"><link rel="prefetch" href="/blog/assets/js/10.651bb2c0.js"><link rel="prefetch" href="/blog/assets/js/11.3248a481.js"><link rel="prefetch" href="/blog/assets/js/12.72e5a42a.js"><link rel="prefetch" href="/blog/assets/js/13.27c5f153.js"><link rel="prefetch" href="/blog/assets/js/14.d8e59edf.js"><link rel="prefetch" href="/blog/assets/js/15.91a7dbbf.js"><link rel="prefetch" href="/blog/assets/js/16.c0285480.js"><link rel="prefetch" href="/blog/assets/js/17.9e378fcb.js"><link rel="prefetch" href="/blog/assets/js/18.b4dc943a.js"><link rel="prefetch" href="/blog/assets/js/19.adc48df6.js"><link rel="prefetch" href="/blog/assets/js/20.64c93c1e.js"><link rel="prefetch" href="/blog/assets/js/3.cc30a7dc.js"><link rel="prefetch" href="/blog/assets/js/4.f9840601.js"><link rel="prefetch" href="/blog/assets/js/5.71474ebe.js"><link rel="prefetch" href="/blog/assets/js/6.6e438ed6.js"><link rel="prefetch" href="/blog/assets/js/8.75e498aa.js"><link rel="prefetch" href="/blog/assets/js/9.d8138c03.js">
+    <link rel="stylesheet" href="/blog/assets/css/0.styles.52236521.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/blog/" class="home-link router-link-active"><img src="/blog/assets/img/haerxibaoweier_3-pic.png" alt="korilo's blog" class="logo"> <span class="site-name can-hide">korilo's blog</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/blog/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Html" class="dropdown-title"><span class="title">Html</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/html/html.html" class="nav-link">
+  html基础
+</a></li><li class="dropdown-item"><!----> <a href="/blog/html/页面架构.html" class="nav-link">
+  页面架构
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Css" class="dropdown-title"><span class="title">Css</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/css/less.html" class="nav-link">
+  Less
+</a></li><li class="dropdown-item"><!----> <a href="/blog/css3/" class="nav-link">
+  css3
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="JavaScript" class="dropdown-title"><span class="title">JavaScript</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/JavaScript/JavaScript.html" class="nav-link">
+  JavaScript基础
+</a></li><li class="dropdown-item"><!----> <a href="/blog/JavaScript/ajax.html" class="nav-link">
+  ajax
+</a></li><li class="dropdown-item"><!----> <a href="/blog/JavaScript/数据操作.html" class="nav-link">
+  数据操作
+</a></li><li class="dropdown-item"><!----> <a href="/blog/JavaScript/es6.html" class="nav-link">
+  ES6语法
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Vue" class="dropdown-title"><span class="title">Vue</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/vue/vue.html" class="nav-link">
+  vue基础
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="拓展" class="dropdown-title"><span class="title">拓展</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/tools/markdown.html" class="nav-link">
+  Markdown
+</a></li><li class="dropdown-item"><!----> <a href="/blog/tools/ps切图.html" class="nav-link">
+  Ps切图
+</a></li></ul></div></div><div class="nav-item"><a href="/blog/about/about.html" class="nav-link">
+  About
+</a></div><div class="nav-item"><a href="https://github.com/korilo" target="_self" rel="" class="nav-link external">
+  Github
+  <!----></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/blog/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Html" class="dropdown-title"><span class="title">Html</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/html/html.html" class="nav-link">
+  html基础
+</a></li><li class="dropdown-item"><!----> <a href="/blog/html/页面架构.html" class="nav-link">
+  页面架构
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Css" class="dropdown-title"><span class="title">Css</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/css/less.html" class="nav-link">
+  Less
+</a></li><li class="dropdown-item"><!----> <a href="/blog/css3/" class="nav-link">
+  css3
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="JavaScript" class="dropdown-title"><span class="title">JavaScript</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/JavaScript/JavaScript.html" class="nav-link">
+  JavaScript基础
+</a></li><li class="dropdown-item"><!----> <a href="/blog/JavaScript/ajax.html" class="nav-link">
+  ajax
+</a></li><li class="dropdown-item"><!----> <a href="/blog/JavaScript/数据操作.html" class="nav-link">
+  数据操作
+</a></li><li class="dropdown-item"><!----> <a href="/blog/JavaScript/es6.html" class="nav-link">
+  ES6语法
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Vue" class="dropdown-title"><span class="title">Vue</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/vue/vue.html" class="nav-link">
+  vue基础
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="拓展" class="dropdown-title"><span class="title">拓展</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/tools/markdown.html" class="nav-link">
+  Markdown
+</a></li><li class="dropdown-item"><!----> <a href="/blog/tools/ps切图.html" class="nav-link">
+  Ps切图
+</a></li></ul></div></div><div class="nav-item"><a href="/blog/about/about.html" class="nav-link">
+  About
+</a></div><div class="nav-item"><a href="https://github.com/korilo" target="_self" rel="" class="nav-link external">
+  Github
+  <!----></a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>for循环绑定按钮事件问题</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/blog/JavaScript/JavaScript%E7%BB%8F%E5%85%B8%E9%97%AE%E9%A2%98.html#for循环函数绑定问题" class="sidebar-link">for循环函数绑定问题</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/blog/JavaScript/JavaScript%E7%BB%8F%E5%85%B8%E9%97%AE%E9%A2%98.html#解决方法1：let（最简单，但原理最麻烦）" class="sidebar-link">解决方法1：let（最简单，但原理最麻烦）</a></li><li class="sidebar-sub-header"><a href="/blog/JavaScript/JavaScript%E7%BB%8F%E5%85%B8%E9%97%AE%E9%A2%98.html#解决方法2：iffe" class="sidebar-link">解决方法2：IFFE</a></li><li class="sidebar-sub-header"><a href="/blog/JavaScript/JavaScript%E7%BB%8F%E5%85%B8%E9%97%AE%E9%A2%98.html#解决方法3：父节点绑定事件" class="sidebar-link">解决方法3：父节点绑定事件</a></li></ul></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h2 id="for循环函数绑定问题"><a href="#for循环函数绑定问题" class="header-anchor">#</a> for循环函数绑定问题</h2> <ul><li>问题案例：
+<ul><li>用for循环对按钮进行事件绑定，当点击时输出该<code>btn</code>的下标</li></ul></li></ul> <div class="language-JavaScript extra-class"><pre class="language-javascript"><code><span class="token comment">//常见陷阱：</span>
+<span class="token keyword">var</span> btn <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">getElementByTagName</span><span class="token punctuation">(</span><span class="token string">'button'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">var</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> btn<span class="token punctuation">.</span>length<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+    btn<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">.</span><span class="token function-variable function">onclick</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>i<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+<span class="token comment">//无论按哪个按钮，输出的都是数组的长度</span>
+</code></pre></div><ul><li>问题解析：
+<ul><li>当调用执行函数的时候，函数里要调用变量<code>i</code></li> <li>当前作用域里没有变量<code>i</code>，所以到闭包里查找变量<code>i</code>的值</li> <li>此时闭包里保存的变量<code>i</code>的值是循环结束后的最大值</li> <li>所以所有按钮点击输出的结果都是<code>btn.length</code></li></ul></li></ul> <hr> <h3 id="解决方法1：let（最简单，但原理最麻烦）"><a href="#解决方法1：let（最简单，但原理最麻烦）" class="header-anchor">#</a> 解决方法1：<code>let</code>（最简单，但原理最麻烦）</h3> <ul><li><p>让 <code>let</code> 代替<code>var</code> 声明计数器 <code>i</code></p></li> <li><p>原理实现：</p> <ul><li>es5中for循环和if语句没有块级作用域</li> <li>用let声明变量<code>i</code>会生成块级作用域，块级作用域内的局部变量只能在当前块级作用域使用</li></ul></li> <li><p>抛出疑问：</p> <ul><li>为什么for循环会产生不同的块级作用域</li> <li>for循环的变量声明是否也循环执行</li> <li>如果使用了块级作用域为什么<code>i++</code>的操作可以读到变量<code>i</code></li></ul></li></ul> <p>要解决疑问，我们需要了解JavaScript底层实现for循环的过程，在这里我就不写出猜测过程了，直接说结论：</p> <ul><li><p>在for循环中使用let的情况下，由于块级作用域的影响，导致每次迭代过程中的 <code>i</code>都是独立的存在。</p></li> <li><p>整个循环中，计数器<code>i</code>只声明了一次</p></li> <li><p>js引擎底层对变量<code>i</code>进行了记忆。</p></li> <li><p>经验来自参考blog： https://www.cnblogs.com/echolun/p/10584703.html</p></li></ul> <p>模拟for循环过程：</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token comment">//模拟底层for循环过程</span>
+<span class="token keyword">var</span> a <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+<span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">var</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> <span class="token number">3</span><span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  a<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>i<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">//模拟过程</span>
+<span class="token punctuation">{</span>
+    <span class="token comment">//我是父作用域</span>
+    <span class="token keyword">let</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>i <span class="token operator">&lt;</span> <span class="token number">3</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token comment">//这一步模拟底层实现</span>
+        <span class="token keyword">let</span> k <span class="token operator">=</span> i<span class="token punctuation">;</span>
+        a<span class="token punctuation">[</span>k<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token comment">//我是子作用域</span>
+            console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>k<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">;</span>
+    i<span class="token operator">++</span><span class="token punctuation">;</span> <span class="token comment">//为1</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>i <span class="token operator">&lt;</span> <span class="token number">3</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">let</span> k <span class="token operator">=</span> i<span class="token punctuation">;</span>
+        a<span class="token punctuation">[</span>k<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>k<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">;</span>
+    i<span class="token operator">++</span><span class="token punctuation">;</span> <span class="token comment">//为2</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>i <span class="token operator">&lt;</span> <span class="token number">3</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">let</span> k <span class="token operator">=</span> i<span class="token punctuation">;</span>
+        a<span class="token punctuation">[</span>k<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>k<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">;</span>
+    i<span class="token operator">++</span><span class="token punctuation">;</span> <span class="token comment">//为3</span>
+    <span class="token comment">// 跳出循环</span>
+<span class="token punctuation">}</span>
+a<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">//0</span>
+a<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">//1</span>
+a<span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">]</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">//2</span>
+</code></pre></div><p>每次迭代新增了let k = i这一步，且这一步由底层代码实现，我们看不到；</p> <p>这一行代码起到两个作用，第一是产生了块级作用域，解释了这个块级作用域是怎么来的，由于块级的作用，导致3个k互不影响。</p> <p>第二是通过赋值的行为让3个k都访问外部作用域的i，让三个k建立了联系，这也解释了自增时怎么知道上一步是多少。</p> <hr> <h3 id="解决方法2：iffe"><a href="#解决方法2：iffe" class="header-anchor">#</a> 解决方法2：IFFE</h3> <ul><li>原理：
+<ul><li>es5中for循环和if语句没有块级作用域，只能通过函数作用域来实现局部变量</li> <li>用立即执行函数将当前执行过程中的变量<code>i</code>作为参数传进里层的匿名函数作用域</li> <li>用<code>index</code>接收变量<code>i</code>的值，并保存到回调函数的闭包中</li> <li>此时<code>index</code>的值等于当前循环计数器<code>i</code>的值</li></ul></li></ul> <div class="language-JavaScript extra-class"><pre class="language-javascript"><code><span class="token keyword">var</span> btn <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">getElementByTagName</span><span class="token punctuation">(</span><span class="token string">'button'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">var</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> btn<span class="token punctuation">.</span>length<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token comment">//将i的值作为参数传到里层函数的形参变量index里</span>
+    <span class="token punctuation">(</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">index</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+    	btn<span class="token punctuation">[</span>index<span class="token punctuation">]</span><span class="token punctuation">.</span><span class="token function-variable function">onclick</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+            console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>index<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>    
+    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">(</span>i<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><hr> <h3 id="解决方法3：父节点绑定事件"><a href="#解决方法3：父节点绑定事件" class="header-anchor">#</a> 解决方法3：父节点绑定事件</h3> <ul><li>实现原理：
+<ul><li>用父节点绑定单击事件，当子元素触发同事件时会冒泡到父节点</li> <li>用<code>event.target</code>记录点击的是哪个子元素</li> <li>用数组的<code>indexOf</code>返回子元素的下标</li></ul></li> <li>实现方法：
+<ul><li>1）伪数组强制调用真数组的<code>indexOf</code>方法
+<ul><li>call、apply、bind 强制调用</li></ul></li> <li>2）直接将伪数组转换为真数组，再调用<code>indexOf</code>方法
+<ul><li><code>Array.from()</code>：es6方法</li> <li>...扩展运算符</li> <li>暴力for循环push新数组(太麻烦)</li></ul></li></ul></li> <li>问题：
+<ul><li><code>indexOf</code>是数组的方法，伪数组没有该方法</li> <li>如何将伪数组转换成真数组 /  如何调用数组的<code>indexOf</code>方法</li></ul></li> <li></li></ul> <div class="language-JavaScript extra-class"><pre class="language-javascript"><code><span class="token keyword">var</span> btn <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">getElementByTagName</span><span class="token punctuation">(</span><span class="token string">'button'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+btn<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">.</span>parentNode<span class="token punctuation">.</span><span class="token function-variable function">onclick</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">event</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token comment">//方法1： 转换为真数组 </span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>Arry<span class="token punctuation">.</span><span class="token function">from</span><span class="token punctuation">(</span>btn<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">indexOf</span><span class="token punctuation">(</span>event<span class="token punctuation">.</span>target<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token operator">...</span>btn<span class="token punctuation">]</span><span class="token punctuation">.</span><span class="token function">indexOf</span><span class="token punctuation">(</span>event<span class="token punctuation">.</span>target<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token comment">//方法2： 用call、apply、bind调用数组原型里的indexOf方法</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">.</span><span class="token function">indexOf</span><span class="token punctuation">.</span><span class="token function">call</span><span class="token punctuation">(</span>btn<span class="token punctuation">,</span> event<span class="token punctuation">.</span>target<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token class-name">Array</span><span class="token punctuation">.</span>prototype<span class="token punctuation">.</span><span class="token function">indexOf</span><span class="token punctuation">.</span><span class="token function">apply</span><span class="token punctuation">(</span>btn<span class="token punctuation">,</span> <span class="token punctuation">[</span>event<span class="token punctuation">.</span>target<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">.</span>__proto__<span class="token punctuation">.</span><span class="token function">indexOf</span><span class="token punctuation">.</span><span class="token function">bind</span><span class="token punctuation">(</span>btn<span class="token punctuation">,</span> event<span class="token punctuation">.</span>target<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+</code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <!----> </main></div><div class="global-ui"></div></div>
+    <script src="/blog/assets/js/app.4037ec45.js" defer></script><script src="/blog/assets/js/2.31f4a6aa.js" defer></script><script src="/blog/assets/js/7.40f02be7.js" defer></script>
+  </body>
+</html>
