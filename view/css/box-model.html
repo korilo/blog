@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>盒子模型</title>
+    <meta name="generator" content="VuePress 1.4.1">
+    <link rel="icon" href="/blog/assets/img/favicon.ico">
+    <meta name="description" content="vuepress前端博客">
+    <meta name="keywords" content="vuepress,前端学习">
+    <meta name="author" content="陈大彬，korilo">
+    <link rel="preload" href="/blog/assets/css/0.styles.4f44df26.css" as="style"><link rel="preload" href="/blog/assets/js/app.32e238ed.js" as="script"><link rel="preload" href="/blog/assets/js/3.2f19725b.js" as="script"><link rel="preload" href="/blog/assets/js/2.82a5f09e.js" as="script"><link rel="preload" href="/blog/assets/js/16.f9eaf58c.js" as="script"><link rel="prefetch" href="/blog/assets/js/10.bbf9877c.js"><link rel="prefetch" href="/blog/assets/js/11.ecc59e47.js"><link rel="prefetch" href="/blog/assets/js/12.5b182a76.js"><link rel="prefetch" href="/blog/assets/js/13.2d38621d.js"><link rel="prefetch" href="/blog/assets/js/14.d249530b.js"><link rel="prefetch" href="/blog/assets/js/15.2aa52300.js"><link rel="prefetch" href="/blog/assets/js/17.f39e6ad9.js"><link rel="prefetch" href="/blog/assets/js/18.99525acd.js"><link rel="prefetch" href="/blog/assets/js/19.48163c59.js"><link rel="prefetch" href="/blog/assets/js/20.ea0a7462.js"><link rel="prefetch" href="/blog/assets/js/21.69146ce8.js"><link rel="prefetch" href="/blog/assets/js/22.b0760f24.js"><link rel="prefetch" href="/blog/assets/js/23.11c90d8b.js"><link rel="prefetch" href="/blog/assets/js/24.6ead4d73.js"><link rel="prefetch" href="/blog/assets/js/25.c4d2ee63.js"><link rel="prefetch" href="/blog/assets/js/26.81237c9b.js"><link rel="prefetch" href="/blog/assets/js/27.e5346f74.js"><link rel="prefetch" href="/blog/assets/js/28.80c310dc.js"><link rel="prefetch" href="/blog/assets/js/29.2c323076.js"><link rel="prefetch" href="/blog/assets/js/30.0cbd27a3.js"><link rel="prefetch" href="/blog/assets/js/31.058054c0.js"><link rel="prefetch" href="/blog/assets/js/32.bd629c47.js"><link rel="prefetch" href="/blog/assets/js/33.0a8b2762.js"><link rel="prefetch" href="/blog/assets/js/34.51adae37.js"><link rel="prefetch" href="/blog/assets/js/35.8eedf07e.js"><link rel="prefetch" href="/blog/assets/js/36.7cade9f9.js"><link rel="prefetch" href="/blog/assets/js/4.12ca4bcd.js"><link rel="prefetch" href="/blog/assets/js/5.387d7868.js"><link rel="prefetch" href="/blog/assets/js/6.2e56a599.js"><link rel="prefetch" href="/blog/assets/js/7.9b99ded5.js"><link rel="prefetch" href="/blog/assets/js/8.b1e367d9.js"><link rel="prefetch" href="/blog/assets/js/9.9341faa0.js">
+    <link rel="stylesheet" href="/blog/assets/css/0.styles.4f44df26.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/blog/" class="home-link router-link-active"><img src="/blog/assets/img/favicon.ico" alt="" class="logo"> <!----></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Html" class="dropdown-title"><span class="title">Html</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/view/html/html.html" class="nav-link">
+ 标签语义化
+</a></li><li class="dropdown-item"><!----> <a href="/blog/view/html/trick.html" class="nav-link">
+ 细节知识
+</a></li><li class="dropdown-item"><!----> <a href="/blog/view/html/canvas.html" class="nav-link">
+ Canvas
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Css" class="dropdown-title"><span class="title">Css</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/view/css/selector.html" class="nav-link">
+ css选择器
+</a></li><li class="dropdown-item"><!----> <a href="/blog/view/css/rule.html" class="nav-link">
+ css指令
+</a></li><li class="dropdown-item"><!----> <a href="/blog/view/css/box-model.html" class="nav-link router-link-exact-active router-link-active">
+ 盒子模型
+</a></li><li class="dropdown-item"><!----> <a href="/blog/view/css/attribute-computed.html" class="nav-link">
+ css属性计算过程
+</a></li><li class="dropdown-item"><!----> <a href="/blog/view/css/stream.html" class="nav-link">
+ 文档流
+</a></li><li class="dropdown-item"><!----> <a href="/blog/view/css/float.html" class="nav-link">
+ 浮动细节
+</a></li><li class="dropdown-item"><!----> <a href="/blog/view/css/flex.html" class="nav-link">
+ flex布局
+</a></li><li class="dropdown-item"><!----> <a href="/blog/view/css/mobile.html" class="nav-link">
+ 移动端问题
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="JavaScript" class="dropdown-title"><span class="title">JavaScript</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/view/JavaScript/数据操作.html" class="nav-link">
+ 数据操作
+</a></li><li class="dropdown-item"><!----> <a href="/blog/view/JavaScript/节流和防抖.html" class="nav-link">
+ 节流和防抖
+</a></li><li class="dropdown-item"><!----> <a href="/blog/view/JavaScript/es6.html" class="nav-link">
+ ES6语法
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Vue" class="dropdown-title"><span class="title">Vue</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/view/vue/transition.html" class="nav-link">
+ transition组件
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="拓展" class="dropdown-title"><span class="title">拓展</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/view/tools/markdown.html" class="nav-link">
+ Markdown
+</a></li><li class="dropdown-item"><!----> <a href="/blog/view/tools/ps切图.html" class="nav-link">
+ Ps切图
+</a></li></ul></div></div><div class="nav-item"><a href="/blog/" class="nav-link">
+ Home
+</a></div><div class="nav-item"><a href="/blog/view/about/about.html" class="nav-link">
+ About
+</a></div> <a href="https://github.com/korilo" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Html" class="dropdown-title"><span class="title">Html</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/view/html/html.html" class="nav-link">
+ 标签语义化
+</a></li><li class="dropdown-item"><!----> <a href="/blog/view/html/trick.html" class="nav-link">
+ 细节知识
+</a></li><li class="dropdown-item"><!----> <a href="/blog/view/html/canvas.html" class="nav-link">
+ Canvas
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Css" class="dropdown-title"><span class="title">Css</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/view/css/selector.html" class="nav-link">
+ css选择器
+</a></li><li class="dropdown-item"><!----> <a href="/blog/view/css/rule.html" class="nav-link">
+ css指令
+</a></li><li class="dropdown-item"><!----> <a href="/blog/view/css/box-model.html" class="nav-link router-link-exact-active router-link-active">
+ 盒子模型
+</a></li><li class="dropdown-item"><!----> <a href="/blog/view/css/attribute-computed.html" class="nav-link">
+ css属性计算过程
+</a></li><li class="dropdown-item"><!----> <a href="/blog/view/css/stream.html" class="nav-link">
+ 文档流
+</a></li><li class="dropdown-item"><!----> <a href="/blog/view/css/float.html" class="nav-link">
+ 浮动细节
+</a></li><li class="dropdown-item"><!----> <a href="/blog/view/css/flex.html" class="nav-link">
+ flex布局
+</a></li><li class="dropdown-item"><!----> <a href="/blog/view/css/mobile.html" class="nav-link">
+ 移动端问题
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="JavaScript" class="dropdown-title"><span class="title">JavaScript</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/view/JavaScript/数据操作.html" class="nav-link">
+ 数据操作
+</a></li><li class="dropdown-item"><!----> <a href="/blog/view/JavaScript/节流和防抖.html" class="nav-link">
+ 节流和防抖
+</a></li><li class="dropdown-item"><!----> <a href="/blog/view/JavaScript/es6.html" class="nav-link">
+ ES6语法
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Vue" class="dropdown-title"><span class="title">Vue</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/view/vue/transition.html" class="nav-link">
+ transition组件
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="拓展" class="dropdown-title"><span class="title">拓展</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/view/tools/markdown.html" class="nav-link">
+ Markdown
+</a></li><li class="dropdown-item"><!----> <a href="/blog/view/tools/ps切图.html" class="nav-link">
+ Ps切图
+</a></li></ul></div></div><div class="nav-item"><a href="/blog/" class="nav-link">
+ Home
+</a></div><div class="nav-item"><a href="/blog/view/about/about.html" class="nav-link">
+ About
+</a></div> <a href="https://github.com/korilo" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav>  <ul class="sidebar-links"><li><a href="/blog/view/css/selector.html" class="sidebar-link">css选择器</a></li><li><a href="/blog/view/css/rule.html" class="sidebar-link">css指令</a></li><li><a href="/blog/view/css/box-model.html" class="active sidebar-link">盒子模型</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/blog/view/css/box-model.html#盒子的组成" class="sidebar-link">盒子的组成</a></li><li class="sidebar-sub-header"><a href="/blog/view/css/box-model.html#块盒" class="sidebar-link">块盒</a></li><li class="sidebar-sub-header"><a href="/blog/view/css/box-model.html#行盒" class="sidebar-link">行盒</a></li><li class="sidebar-sub-header"><a href="/blog/view/css/box-model.html#行块盒" class="sidebar-link">行块盒</a></li><li class="sidebar-sub-header"><a href="/blog/view/css/box-model.html#可替换元素" class="sidebar-link">可替换元素</a></li></ul></li><li><a href="/blog/view/css/attribute-computed.html" class="sidebar-link">css属性计算过程</a></li><li><a href="/blog/view/css/stream.html" class="sidebar-link">文档流</a></li><li><a href="/blog/view/css/float.html" class="sidebar-link">浮动细节</a></li><li><a href="/blog/view/css/flex.html" class="sidebar-link">flex布局</a></li><li><a href="/blog/view/css/mobile.html" class="sidebar-link">移动端问题</a></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h2 id="盒子的组成"><a href="#盒子的组成" class="header-anchor">#</a> 盒子的组成</h2> <p>无论是行盒还是块盒，都由下面几个部分组成</p> <ol><li>content</li> <li>padding</li> <li>border</li> <li>margin</li></ol> <p>除了content，其他都由top/bottom/left/right 4个部分组成，对应padding-top、padding-bottom等</p> <ul><li>width、height默认设置为内容盒content-box</li></ul> <p>默认情况下，width 和 height 设置的是content的宽高，这样会造成一个状况： 当设置padding、border时，盒子整体会被撑开，造成样式与设计出现差别</p> <p>解决：将原来的content-box 设置成border-box</p> <p>设置box-sizing: border-box （css3）</p> <p>设置后 width 和 height 设置的是以边框为基准的宽高</p> <ul><li>背景默认设置是边框盒border-box</li></ul> <p>背景默认显示区域是边框盒，包含边框</p> <p>改变显示区域：修改属性background-clip</p> <p>可以修改为content-box、padding-box、border-box</p> <hr> <h2 id="块盒"><a href="#块盒" class="header-anchor">#</a> 块盒</h2> <p>块盒：display: block</p> <p>常见块盒：容器元素div、header等、h、p</p> <p>特点：</p> <ol><li>独占一行</li> <li>可以设置宽高</li></ol> <hr> <h2 id="行盒"><a href="#行盒" class="header-anchor">#</a> 行盒</h2> <p>行盒：display: inline</p> <p>常见的行盒：包含具体内容的元素</p> <p>span、strong、em、i、img、video、audio</p> <p><strong>特点：</strong></p> <ol><li>盒子沿着内容延伸</li> <li>设置宽高无效，可以用字体大 小、行高等属性间接调整宽高</li> <li>padding、margin、border:<strong>水平方向有效</strong>，但竖直方向只能看到效果，实际内容没有动</li></ol> <hr> <h2 id="行块盒"><a href="#行块盒" class="header-anchor">#</a> 行块盒</h2> <p>行块盒: display: inline-block</p> <p>特点：</p> <ol><li>在行内显示，也可以设置宽高</li> <li>行盒和行块盒的内容间会发生空白折叠，造成盒子之间有间隙（可以不空行写，就不会产生间隙）</li></ol> <p>应用场景：分页</p> <h2 id="可替换元素"><a href="#可替换元素" class="header-anchor">#</a> 可替换元素</h2> <p>可替换元素：显示内容取决于属性的元素，如img/audio/video</p> <p>非可替换元素：显示内容取决于元素内容的元素</p> <p>页面上绝大部分元素都是非可替换元素</p> <p>绝大部分可替换元素均为行盒，display: <strong>inline</strong></p> <p>但是，可替换元素却拥有行块盒的特性而非行盒的特性，可以设置宽高</p> <p><strong>原因：</strong></p> <p>可替换元素有一个隐藏属性：object-fit</p> <ul><li>属性值：
+<ul><li>fill: 默认值，填充显示，拉伸宽高</li> <li>cover: 保持比例填充，溢出部分隐藏</li> <li>contain：保持比例，完整显示</li></ul></li></ul></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/blog/view/css/rule.html" class="prev">
+        css指令
+      </a></span> <span class="next"><a href="/blog/view/css/attribute-computed.html">
+        css属性计算过程
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/blog/assets/js/app.32e238ed.js" defer></script><script src="/blog/assets/js/3.2f19725b.js" defer></script><script src="/blog/assets/js/2.82a5f09e.js" defer></script><script src="/blog/assets/js/16.f9eaf58c.js" defer></script>
+  </body>
+</html>

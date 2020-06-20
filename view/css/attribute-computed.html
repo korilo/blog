@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>css属性计算过程</title>
+    <meta name="generator" content="VuePress 1.4.1">
+    <link rel="icon" href="/blog/assets/img/favicon.ico">
+    <meta name="description" content="vuepress前端博客">
+    <meta name="keywords" content="vuepress,前端学习">
+    <meta name="author" content="陈大彬，korilo">
+    <link rel="preload" href="/blog/assets/css/0.styles.4f44df26.css" as="style"><link rel="preload" href="/blog/assets/js/app.32e238ed.js" as="script"><link rel="preload" href="/blog/assets/js/3.2f19725b.js" as="script"><link rel="preload" href="/blog/assets/js/2.82a5f09e.js" as="script"><link rel="preload" href="/blog/assets/js/15.2aa52300.js" as="script"><link rel="prefetch" href="/blog/assets/js/10.bbf9877c.js"><link rel="prefetch" href="/blog/assets/js/11.ecc59e47.js"><link rel="prefetch" href="/blog/assets/js/12.5b182a76.js"><link rel="prefetch" href="/blog/assets/js/13.2d38621d.js"><link rel="prefetch" href="/blog/assets/js/14.d249530b.js"><link rel="prefetch" href="/blog/assets/js/16.f9eaf58c.js"><link rel="prefetch" href="/blog/assets/js/17.f39e6ad9.js"><link rel="prefetch" href="/blog/assets/js/18.99525acd.js"><link rel="prefetch" href="/blog/assets/js/19.48163c59.js"><link rel="prefetch" href="/blog/assets/js/20.ea0a7462.js"><link rel="prefetch" href="/blog/assets/js/21.69146ce8.js"><link rel="prefetch" href="/blog/assets/js/22.b0760f24.js"><link rel="prefetch" href="/blog/assets/js/23.11c90d8b.js"><link rel="prefetch" href="/blog/assets/js/24.6ead4d73.js"><link rel="prefetch" href="/blog/assets/js/25.c4d2ee63.js"><link rel="prefetch" href="/blog/assets/js/26.81237c9b.js"><link rel="prefetch" href="/blog/assets/js/27.e5346f74.js"><link rel="prefetch" href="/blog/assets/js/28.80c310dc.js"><link rel="prefetch" href="/blog/assets/js/29.2c323076.js"><link rel="prefetch" href="/blog/assets/js/30.0cbd27a3.js"><link rel="prefetch" href="/blog/assets/js/31.058054c0.js"><link rel="prefetch" href="/blog/assets/js/32.bd629c47.js"><link rel="prefetch" href="/blog/assets/js/33.0a8b2762.js"><link rel="prefetch" href="/blog/assets/js/34.51adae37.js"><link rel="prefetch" href="/blog/assets/js/35.8eedf07e.js"><link rel="prefetch" href="/blog/assets/js/36.7cade9f9.js"><link rel="prefetch" href="/blog/assets/js/4.12ca4bcd.js"><link rel="prefetch" href="/blog/assets/js/5.387d7868.js"><link rel="prefetch" href="/blog/assets/js/6.2e56a599.js"><link rel="prefetch" href="/blog/assets/js/7.9b99ded5.js"><link rel="prefetch" href="/blog/assets/js/8.b1e367d9.js"><link rel="prefetch" href="/blog/assets/js/9.9341faa0.js">
+    <link rel="stylesheet" href="/blog/assets/css/0.styles.4f44df26.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/blog/" class="home-link router-link-active"><img src="/blog/assets/img/favicon.ico" alt="" class="logo"> <!----></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Html" class="dropdown-title"><span class="title">Html</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/view/html/html.html" class="nav-link">
+ 标签语义化
+</a></li><li class="dropdown-item"><!----> <a href="/blog/view/html/trick.html" class="nav-link">
+ 细节知识
+</a></li><li class="dropdown-item"><!----> <a href="/blog/view/html/canvas.html" class="nav-link">
+ Canvas
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Css" class="dropdown-title"><span class="title">Css</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/view/css/selector.html" class="nav-link">
+ css选择器
+</a></li><li class="dropdown-item"><!----> <a href="/blog/view/css/rule.html" class="nav-link">
+ css指令
+</a></li><li class="dropdown-item"><!----> <a href="/blog/view/css/box-model.html" class="nav-link">
+ 盒子模型
+</a></li><li class="dropdown-item"><!----> <a href="/blog/view/css/attribute-computed.html" class="nav-link router-link-exact-active router-link-active">
+ css属性计算过程
+</a></li><li class="dropdown-item"><!----> <a href="/blog/view/css/stream.html" class="nav-link">
+ 文档流
+</a></li><li class="dropdown-item"><!----> <a href="/blog/view/css/float.html" class="nav-link">
+ 浮动细节
+</a></li><li class="dropdown-item"><!----> <a href="/blog/view/css/flex.html" class="nav-link">
+ flex布局
+</a></li><li class="dropdown-item"><!----> <a href="/blog/view/css/mobile.html" class="nav-link">
+ 移动端问题
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="JavaScript" class="dropdown-title"><span class="title">JavaScript</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/view/JavaScript/数据操作.html" class="nav-link">
+ 数据操作
+</a></li><li class="dropdown-item"><!----> <a href="/blog/view/JavaScript/节流和防抖.html" class="nav-link">
+ 节流和防抖
+</a></li><li class="dropdown-item"><!----> <a href="/blog/view/JavaScript/es6.html" class="nav-link">
+ ES6语法
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Vue" class="dropdown-title"><span class="title">Vue</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/view/vue/transition.html" class="nav-link">
+ transition组件
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="拓展" class="dropdown-title"><span class="title">拓展</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/view/tools/markdown.html" class="nav-link">
+ Markdown
+</a></li><li class="dropdown-item"><!----> <a href="/blog/view/tools/ps切图.html" class="nav-link">
+ Ps切图
+</a></li></ul></div></div><div class="nav-item"><a href="/blog/" class="nav-link">
+ Home
+</a></div><div class="nav-item"><a href="/blog/view/about/about.html" class="nav-link">
+ About
+</a></div> <a href="https://github.com/korilo" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Html" class="dropdown-title"><span class="title">Html</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/view/html/html.html" class="nav-link">
+ 标签语义化
+</a></li><li class="dropdown-item"><!----> <a href="/blog/view/html/trick.html" class="nav-link">
+ 细节知识
+</a></li><li class="dropdown-item"><!----> <a href="/blog/view/html/canvas.html" class="nav-link">
+ Canvas
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Css" class="dropdown-title"><span class="title">Css</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/view/css/selector.html" class="nav-link">
+ css选择器
+</a></li><li class="dropdown-item"><!----> <a href="/blog/view/css/rule.html" class="nav-link">
+ css指令
+</a></li><li class="dropdown-item"><!----> <a href="/blog/view/css/box-model.html" class="nav-link">
+ 盒子模型
+</a></li><li class="dropdown-item"><!----> <a href="/blog/view/css/attribute-computed.html" class="nav-link router-link-exact-active router-link-active">
+ css属性计算过程
+</a></li><li class="dropdown-item"><!----> <a href="/blog/view/css/stream.html" class="nav-link">
+ 文档流
+</a></li><li class="dropdown-item"><!----> <a href="/blog/view/css/float.html" class="nav-link">
+ 浮动细节
+</a></li><li class="dropdown-item"><!----> <a href="/blog/view/css/flex.html" class="nav-link">
+ flex布局
+</a></li><li class="dropdown-item"><!----> <a href="/blog/view/css/mobile.html" class="nav-link">
+ 移动端问题
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="JavaScript" class="dropdown-title"><span class="title">JavaScript</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/view/JavaScript/数据操作.html" class="nav-link">
+ 数据操作
+</a></li><li class="dropdown-item"><!----> <a href="/blog/view/JavaScript/节流和防抖.html" class="nav-link">
+ 节流和防抖
+</a></li><li class="dropdown-item"><!----> <a href="/blog/view/JavaScript/es6.html" class="nav-link">
+ ES6语法
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Vue" class="dropdown-title"><span class="title">Vue</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/view/vue/transition.html" class="nav-link">
+ transition组件
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="拓展" class="dropdown-title"><span class="title">拓展</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/view/tools/markdown.html" class="nav-link">
+ Markdown
+</a></li><li class="dropdown-item"><!----> <a href="/blog/view/tools/ps切图.html" class="nav-link">
+ Ps切图
+</a></li></ul></div></div><div class="nav-item"><a href="/blog/" class="nav-link">
+ Home
+</a></div><div class="nav-item"><a href="/blog/view/about/about.html" class="nav-link">
+ About
+</a></div> <a href="https://github.com/korilo" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav>  <ul class="sidebar-links"><li><a href="/blog/view/css/selector.html" class="sidebar-link">css选择器</a></li><li><a href="/blog/view/css/rule.html" class="sidebar-link">css指令</a></li><li><a href="/blog/view/css/box-model.html" class="sidebar-link">盒子模型</a></li><li><a href="/blog/view/css/attribute-computed.html" class="active sidebar-link">css属性计算过程</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/blog/view/css/attribute-computed.html#计算过程" class="sidebar-link">计算过程</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/blog/view/css/attribute-computed.html#_1-确定声明值" class="sidebar-link">1.确定声明值</a></li><li class="sidebar-sub-header"><a href="/blog/view/css/attribute-computed.html#_2-层叠冲突" class="sidebar-link">2.层叠冲突</a></li><li class="sidebar-sub-header"><a href="/blog/view/css/attribute-computed.html#_3-使用继承" class="sidebar-link">3.使用继承</a></li><li class="sidebar-sub-header"><a href="/blog/view/css/attribute-computed.html#_4-使用默认值" class="sidebar-link">4.使用默认值</a></li></ul></li><li class="sidebar-sub-header"><a href="/blog/view/css/attribute-computed.html#易踩的坑" class="sidebar-link">易踩的坑</a></li></ul></li><li><a href="/blog/view/css/stream.html" class="sidebar-link">文档流</a></li><li><a href="/blog/view/css/float.html" class="sidebar-link">浮动细节</a></li><li><a href="/blog/view/css/flex.html" class="sidebar-link">flex布局</a></li><li><a href="/blog/view/css/mobile.html" class="sidebar-link">移动端问题</a></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h2 id="计算过程"><a href="#计算过程" class="header-anchor">#</a> 计算过程</h2> <p>浏览器渲染html元素是一个元素一个元素按次序渲染的，顺序按照页面文档的树形目录结构进行</p> <p>渲染每个元素的前提条件：该元素的<strong>所有css属性</strong>必须都有值（所有属性都被赋值）</p> <p>一个元素，从所有属性都没有值，到所有属性都被赋值的过程，叫做属性值的计算过程</p> <p>css元素属性值计算过程分为4个步骤：</p> <ol><li>确定声明值</li> <li>层叠冲突</li> <li>使用继承</li> <li>使用默认值</li></ol> <p>经过4个步骤后，该元素的的所有属性都被赋予了值，浏览器开始渲染元素</p> <hr> <h3 id="_1-确定声明值"><a href="#_1-确定声明值" class="header-anchor">#</a> 1.确定声明值</h3> <p>该过程会参考样式表中没有冲突的声明，作为css属性值</p> <p>参考的样式表包括自己写的声明样式表以及浏览器的默认样式表</p> <p><strong>注意</strong>：浏览器对部分元素有默认的样式声明，要注意区分样式默认值和浏览器默认样式，这是两个不同的概念</p> <p>一些属性的简写写法（语法糖），实际上会转换成对每个具体的属性赋值，保证每个属性都被赋值</p> <hr> <h3 id="_2-层叠冲突"><a href="#_2-层叠冲突" class="header-anchor">#</a> 2.层叠冲突</h3> <p>该过程会对样式表有冲突的声明使用层叠规则，确定css属性值</p> <ul><li>比较重要性（非默认）</li> <li>比较特殊性（选择器权重）</li> <li>比较源次序（声明先后）</li></ul> <p>经过上面三个步骤确定冲突属性的最终值</p> <hr> <h3 id="_3-使用继承"><a href="#_3-使用继承" class="header-anchor">#</a> 3.使用继承</h3> <p>该过程会查看<strong>没有被赋值</strong>的其他属性是否有继承属性</p> <p>若可继承，则继承上级元素的属性值</p> <hr> <h3 id="_4-使用默认值"><a href="#_4-使用默认值" class="header-anchor">#</a> 4.使用默认值</h3> <p>若还是有属性没有被赋值，将全部按照默认值进行赋值</p> <p>至此，该元素的所有属性都被赋值，浏览器开始对元素进行渲染</p> <hr> <h2 id="易踩的坑"><a href="#易踩的坑" class="header-anchor">#</a> 易踩的坑</h2> <p>说出a标签的颜色</p> <div class="language-html extra-class"><pre class="language-html"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>wrap<span class="token punctuation">&quot;</span></span><span class="token style-attr language-css"><span class="token attr-name"> <span class="token attr-name">style</span></span><span class="token punctuation">=&quot;</span><span class="token attr-value"><span class="token property">color</span><span class="token punctuation">:</span> red</span><span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span><span class="token punctuation">&gt;</span></span>123<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><p>结果是： a标签的文字颜色还是蓝色，并没有继承到父级的属性值</p> <p>原因：a标签有默认样式，指定了字体的颜色，所以不会发生第三步的继承</p> <p>若有这样一个需求：要求a标签能继承父级元素的字体颜色样式，要怎么实现？</p> <p>首先：a标签字体颜色有默认样式前面已经说了，无法正常继承父级样式</p> <p>其次：若自己声明了a标签的字体颜色，则会在第二步中替换掉默认样式，同样无法继承父级样式</p> <p><strong>解决方法</strong>：声明字体颜色样式属性值为<strong>inherit</strong>，强制继承父级元素样式</p> <ul><li>类似的特殊属性值：
+<ul><li>inherit: 继承父元素属性值</li> <li>initial: 默认值</li></ul></li></ul></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/blog/view/css/box-model.html" class="prev">
+        盒子模型
+      </a></span> <span class="next"><a href="/blog/view/css/stream.html">
+        文档流
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/blog/assets/js/app.32e238ed.js" defer></script><script src="/blog/assets/js/3.2f19725b.js" defer></script><script src="/blog/assets/js/2.82a5f09e.js" defer></script><script src="/blog/assets/js/15.2aa52300.js" defer></script>
+  </body>
+</html>

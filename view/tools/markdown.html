@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>maekdown语法</title>
+    <meta name="generator" content="VuePress 1.4.1">
+    <link rel="icon" href="/blog/assets/img/favicon.ico">
+    <meta name="description" content="vuepress前端博客">
+    <meta name="keywords" content="vuepress,前端学习">
+    <meta name="author" content="陈大彬，korilo">
+    <link rel="preload" href="/blog/assets/css/0.styles.4f44df26.css" as="style"><link rel="preload" href="/blog/assets/js/app.32e238ed.js" as="script"><link rel="preload" href="/blog/assets/js/3.2f19725b.js" as="script"><link rel="preload" href="/blog/assets/js/2.82a5f09e.js" as="script"><link rel="preload" href="/blog/assets/js/32.bd629c47.js" as="script"><link rel="prefetch" href="/blog/assets/js/10.bbf9877c.js"><link rel="prefetch" href="/blog/assets/js/11.ecc59e47.js"><link rel="prefetch" href="/blog/assets/js/12.5b182a76.js"><link rel="prefetch" href="/blog/assets/js/13.2d38621d.js"><link rel="prefetch" href="/blog/assets/js/14.d249530b.js"><link rel="prefetch" href="/blog/assets/js/15.2aa52300.js"><link rel="prefetch" href="/blog/assets/js/16.f9eaf58c.js"><link rel="prefetch" href="/blog/assets/js/17.f39e6ad9.js"><link rel="prefetch" href="/blog/assets/js/18.99525acd.js"><link rel="prefetch" href="/blog/assets/js/19.48163c59.js"><link rel="prefetch" href="/blog/assets/js/20.ea0a7462.js"><link rel="prefetch" href="/blog/assets/js/21.69146ce8.js"><link rel="prefetch" href="/blog/assets/js/22.b0760f24.js"><link rel="prefetch" href="/blog/assets/js/23.11c90d8b.js"><link rel="prefetch" href="/blog/assets/js/24.6ead4d73.js"><link rel="prefetch" href="/blog/assets/js/25.c4d2ee63.js"><link rel="prefetch" href="/blog/assets/js/26.81237c9b.js"><link rel="prefetch" href="/blog/assets/js/27.e5346f74.js"><link rel="prefetch" href="/blog/assets/js/28.80c310dc.js"><link rel="prefetch" href="/blog/assets/js/29.2c323076.js"><link rel="prefetch" href="/blog/assets/js/30.0cbd27a3.js"><link rel="prefetch" href="/blog/assets/js/31.058054c0.js"><link rel="prefetch" href="/blog/assets/js/33.0a8b2762.js"><link rel="prefetch" href="/blog/assets/js/34.51adae37.js"><link rel="prefetch" href="/blog/assets/js/35.8eedf07e.js"><link rel="prefetch" href="/blog/assets/js/36.7cade9f9.js"><link rel="prefetch" href="/blog/assets/js/4.12ca4bcd.js"><link rel="prefetch" href="/blog/assets/js/5.387d7868.js"><link rel="prefetch" href="/blog/assets/js/6.2e56a599.js"><link rel="prefetch" href="/blog/assets/js/7.9b99ded5.js"><link rel="prefetch" href="/blog/assets/js/8.b1e367d9.js"><link rel="prefetch" href="/blog/assets/js/9.9341faa0.js">
+    <link rel="stylesheet" href="/blog/assets/css/0.styles.4f44df26.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/blog/" class="home-link router-link-active"><img src="/blog/assets/img/favicon.ico" alt="" class="logo"> <!----></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Html" class="dropdown-title"><span class="title">Html</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/view/html/html.html" class="nav-link">
+ 标签语义化
+</a></li><li class="dropdown-item"><!----> <a href="/blog/view/html/trick.html" class="nav-link">
+ 细节知识
+</a></li><li class="dropdown-item"><!----> <a href="/blog/view/html/canvas.html" class="nav-link">
+ Canvas
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Css" class="dropdown-title"><span class="title">Css</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/view/css/selector.html" class="nav-link">
+ css选择器
+</a></li><li class="dropdown-item"><!----> <a href="/blog/view/css/rule.html" class="nav-link">
+ css指令
+</a></li><li class="dropdown-item"><!----> <a href="/blog/view/css/box-model.html" class="nav-link">
+ 盒子模型
+</a></li><li class="dropdown-item"><!----> <a href="/blog/view/css/attribute-computed.html" class="nav-link">
+ css属性计算过程
+</a></li><li class="dropdown-item"><!----> <a href="/blog/view/css/stream.html" class="nav-link">
+ 文档流
+</a></li><li class="dropdown-item"><!----> <a href="/blog/view/css/float.html" class="nav-link">
+ 浮动细节
+</a></li><li class="dropdown-item"><!----> <a href="/blog/view/css/flex.html" class="nav-link">
+ flex布局
+</a></li><li class="dropdown-item"><!----> <a href="/blog/view/css/mobile.html" class="nav-link">
+ 移动端问题
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="JavaScript" class="dropdown-title"><span class="title">JavaScript</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/view/JavaScript/数据操作.html" class="nav-link">
+ 数据操作
+</a></li><li class="dropdown-item"><!----> <a href="/blog/view/JavaScript/节流和防抖.html" class="nav-link">
+ 节流和防抖
+</a></li><li class="dropdown-item"><!----> <a href="/blog/view/JavaScript/es6.html" class="nav-link">
+ ES6语法
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Vue" class="dropdown-title"><span class="title">Vue</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/view/vue/transition.html" class="nav-link">
+ transition组件
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="拓展" class="dropdown-title"><span class="title">拓展</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/view/tools/markdown.html" class="nav-link router-link-exact-active router-link-active">
+ Markdown
+</a></li><li class="dropdown-item"><!----> <a href="/blog/view/tools/ps切图.html" class="nav-link">
+ Ps切图
+</a></li></ul></div></div><div class="nav-item"><a href="/blog/" class="nav-link">
+ Home
+</a></div><div class="nav-item"><a href="/blog/view/about/about.html" class="nav-link">
+ About
+</a></div> <a href="https://github.com/korilo" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Html" class="dropdown-title"><span class="title">Html</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/view/html/html.html" class="nav-link">
+ 标签语义化
+</a></li><li class="dropdown-item"><!----> <a href="/blog/view/html/trick.html" class="nav-link">
+ 细节知识
+</a></li><li class="dropdown-item"><!----> <a href="/blog/view/html/canvas.html" class="nav-link">
+ Canvas
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Css" class="dropdown-title"><span class="title">Css</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/view/css/selector.html" class="nav-link">
+ css选择器
+</a></li><li class="dropdown-item"><!----> <a href="/blog/view/css/rule.html" class="nav-link">
+ css指令
+</a></li><li class="dropdown-item"><!----> <a href="/blog/view/css/box-model.html" class="nav-link">
+ 盒子模型
+</a></li><li class="dropdown-item"><!----> <a href="/blog/view/css/attribute-computed.html" class="nav-link">
+ css属性计算过程
+</a></li><li class="dropdown-item"><!----> <a href="/blog/view/css/stream.html" class="nav-link">
+ 文档流
+</a></li><li class="dropdown-item"><!----> <a href="/blog/view/css/float.html" class="nav-link">
+ 浮动细节
+</a></li><li class="dropdown-item"><!----> <a href="/blog/view/css/flex.html" class="nav-link">
+ flex布局
+</a></li><li class="dropdown-item"><!----> <a href="/blog/view/css/mobile.html" class="nav-link">
+ 移动端问题
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="JavaScript" class="dropdown-title"><span class="title">JavaScript</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/view/JavaScript/数据操作.html" class="nav-link">
+ 数据操作
+</a></li><li class="dropdown-item"><!----> <a href="/blog/view/JavaScript/节流和防抖.html" class="nav-link">
+ 节流和防抖
+</a></li><li class="dropdown-item"><!----> <a href="/blog/view/JavaScript/es6.html" class="nav-link">
+ ES6语法
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Vue" class="dropdown-title"><span class="title">Vue</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/view/vue/transition.html" class="nav-link">
+ transition组件
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="拓展" class="dropdown-title"><span class="title">拓展</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/view/tools/markdown.html" class="nav-link router-link-exact-active router-link-active">
+ Markdown
+</a></li><li class="dropdown-item"><!----> <a href="/blog/view/tools/ps切图.html" class="nav-link">
+ Ps切图
+</a></li></ul></div></div><div class="nav-item"><a href="/blog/" class="nav-link">
+ Home
+</a></div><div class="nav-item"><a href="/blog/view/about/about.html" class="nav-link">
+ About
+</a></div> <a href="https://github.com/korilo" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav>  <ul class="sidebar-links"><li><a href="/blog/view/tools/markdown.html" class="active sidebar-link">maekdown语法</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/blog/view/tools/markdown.html#一、markdown是什么？" class="sidebar-link">一、Markdown是什么？</a></li><li class="sidebar-sub-header"><a href="/blog/view/tools/markdown.html#二、markdown的优点" class="sidebar-link">二、Markdown的优点</a></li><li class="sidebar-sub-header"><a href="/blog/view/tools/markdown.html#三、markdown与html的兼容与转换" class="sidebar-link">三、Markdown与HTML的兼容与转换</a></li><li class="sidebar-sub-header"><a href="/blog/view/tools/markdown.html#四、markdown基础语法" class="sidebar-link">四、Markdown基础语法</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/blog/view/tools/markdown.html#标题" class="sidebar-link">标题</a></li><li class="sidebar-sub-header"><a href="/blog/view/tools/markdown.html#列表" class="sidebar-link">列表</a></li><li class="sidebar-sub-header"><a href="/blog/view/tools/markdown.html#字体" class="sidebar-link">字体</a></li><li class="sidebar-sub-header"><a href="/blog/view/tools/markdown.html#插入" class="sidebar-link">插入</a></li><li class="sidebar-sub-header"><a href="/blog/view/tools/markdown.html#段落" class="sidebar-link">段落</a></li><li class="sidebar-sub-header"><a href="/blog/view/tools/markdown.html#转义字符" class="sidebar-link">转义字符</a></li></ul></li><li class="sidebar-sub-header"><a href="/blog/view/tools/markdown.html#五、markdown进阶语法" class="sidebar-link">五、Markdown进阶语法</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/blog/view/tools/markdown.html#yaml题头" class="sidebar-link">YAML题头</a></li><li class="sidebar-sub-header"><a href="/blog/view/tools/markdown.html#注脚" class="sidebar-link">注脚</a></li><li class="sidebar-sub-header"><a href="/blog/view/tools/markdown.html#书名强调" class="sidebar-link">书名强调</a></li><li class="sidebar-sub-header"><a href="/blog/view/tools/markdown.html#缩写" class="sidebar-link">缩写</a></li><li class="sidebar-sub-header"><a href="/blog/view/tools/markdown.html#自定义div容器" class="sidebar-link">自定义div容器</a></li><li class="sidebar-sub-header"><a href="/blog/view/tools/markdown.html#表格" class="sidebar-link">表格</a></li><li class="sidebar-sub-header"><a href="/blog/view/tools/markdown.html#emoji表情" class="sidebar-link">emoji表情</a></li><li class="sidebar-sub-header"><a href="/blog/view/tools/markdown.html#todolist" class="sidebar-link">Todolist</a></li><li class="sidebar-sub-header"><a href="/blog/view/tools/markdown.html#latex" class="sidebar-link">LaTeX</a></li></ul></li></ul></li><li><a href="/blog/view/tools/ps切图.html" class="sidebar-link">Photoshop切图</a></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h2 id="一、markdown是什么？"><a href="#一、markdown是什么？" class="header-anchor">#</a> 一、Markdown是什么？</h2> <p>  Markdown是一个Web上使用的文本到HTML的转换工具，可以通过简单、易读写的文本格式生成结构化的HTML文档。Markdown的思想是用简洁的语法代替排版，以标记语法来达到排版的效果。通过Markdown，文章的内容到格式、插图等都可以通过码字来实现。</p> <h2 id="二、markdown的优点"><a href="#二、markdown的优点" class="header-anchor">#</a> 二、Markdown的优点</h2> <ul><li><p>专注于文字内容而不是排版样式</p></li> <li><p>兼容HTML,轻松导出HTML、PDF和本身的.md文件</p></li> <li><p>纯文本内容，兼容所有的文本编辑器与字处理软件</p></li> <li><p>可读性高，适合写作的语言</p></li></ul> <p>Markdown的目标是实现易读易写，成为适用于网络的书写语言</p> <h2 id="三、markdown与html的兼容与转换"><a href="#三、markdown与html的兼容与转换" class="header-anchor">#</a> 三、Markdown与HTML的兼容与转换</h2> <ul><li><p>HTML的语法可以直接在Markdown上显示</p></li> <li><p>HTML中的特殊转义符号</p></li></ul> <div class="language-html extra-class"><pre class="language-html"><code>&lt;  =  <span class="token entity" title="&lt;">&amp;lt;</span>
+
+&amp;  =  <span class="token entity" title="&amp;">&amp;amp;</span>
+</code></pre></div><p>HTML的特殊转义符号可以直接在Markdown上识别和书写</p> <h2 id="四、markdown基础语法"><a href="#四、markdown基础语法" class="header-anchor">#</a> 四、Markdown基础语法</h2> <h3 id="标题"><a href="#标题" class="header-anchor">#</a> 标题</h3> <ol><li>类Atx形式</li></ol> <div class="language-html extra-class"><pre class="language-html"><code>一级标题：	# 一级标题
+二级标题：	## 二级标题
+n 级标题：	(n个#) n级标题		
+</code></pre></div><p>最高为六级标题，&quot;#&quot;也可以在右边进行闭合，但以左边#的数量为准</p> <ol start="2"><li>类Setext语法</li></ol> <div class="language-html extra-class"><pre class="language-html"><code>一级标题：	一级标题
+		======================
+        
+二级标题：	二级标题
+		----------------------
+</code></pre></div><p><strong>&quot;=&quot;和&quot;-&quot;的数量任意，但要大于3</strong></p> <hr> <h3 id="列表"><a href="#列表" class="header-anchor">#</a> 列表</h3> <ol><li>无序列表</li></ol> <ul><li>一级列表</li></ul> <div class="language-html extra-class"><pre class="language-html"><code>Markdown:		* 列表项1
+			* 列表项2
+
+  HTML:			<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>ul</span><span class="token punctuation">&gt;</span></span>
+  			 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span><span class="token punctuation">&gt;</span></span>列表项1<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span>
+            		 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span><span class="token punctuation">&gt;</span></span>列表项2<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span>
+			<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>ul</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><ul><li>二级列表</li></ul> <div class="language-html extra-class"><pre class="language-html"><code>(2~5个空格)* 列表项1
+(2~5个空格)* 列表项2
+</code></pre></div><p>上面的&quot;*&quot;号可以用&quot;+&quot;和&quot;-&quot;进行替换</p> <ol start="2"><li>有序列表</li></ol> <div class="language-html extra-class"><pre class="language-html"><code>Markdown:		1. 列表项1
+			2. 列表项2
+
+  HTML:			<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>ol</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>A/a/i/I<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+  			 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span><span class="token punctuation">&gt;</span></span>列表项1<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span>
+            		 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span><span class="token punctuation">&gt;</span></span>列表项2<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span>
+			<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>ol</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><p>列表可以嵌套</p> <p>Markdown部分编辑器会对有序列表的序号进行自动排序（即前面的数字序号可以是任意数字，但为了增加可读性，推荐使用对应数字），可以通过增加二级标题的方式使排序分开。</p> <p>HTML的有序列表可以修改标识符，Markdown部分编辑器可能支持。为了追求更好的显示效果，可以采用HTML的写法。</p> <hr> <h3 id="字体"><a href="#字体" class="header-anchor">#</a> 字体</h3> <ol><li>斜体</li></ol> <div class="language-html extra-class"><pre class="language-html"><code>Markdown:	     *斜体*
+
+  HTML:		  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>em</span><span class="token punctuation">&gt;</span></span>斜体<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>em</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><ol start="2"><li>粗体</li></ol> <div class="language-html extra-class"><pre class="language-html"><code>Markdown:	      **粗体**
+
+  HTML:		<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>strong</span><span class="token punctuation">&gt;</span></span>粗体<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>strong</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><ol start="3"><li>粗斜体</li></ol> <div class="language-bash extra-class"><pre class="language-bash"><code>Markdown:	         ***粗斜体***
+
+  HTML:		<span class="token operator">&lt;</span>em<span class="token operator">&gt;</span><span class="token operator">&lt;</span>strong<span class="token operator">&gt;</span>粗斜体<span class="token operator">&lt;</span>/strong<span class="token operator">&gt;</span><span class="token operator">&lt;</span>/em<span class="token operator">&gt;</span>
+</code></pre></div><p>上面的“*”号可以用底线“_”代替</p> <p>Markdown对中文兼容不太友好，粗斜体在使用时前面要加空格，否则会被认为是同一字段，没有要强调的部分。</p> <hr> <ol start="4"><li>上标</li></ol> <div class="language-html extra-class"><pre class="language-html"><code>Markdown:	     ^上标文本^		      (shift + 6)
+
+  HTML:		 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>sup</span><span class="token punctuation">&gt;</span></span>标记文本<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>sup</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><ol start="5"><li>下标</li></ol> <div class="language-html extra-class"><pre class="language-html"><code>Markdown:	     ~下标文本~		   (shift + Esc下面的键)
+
+  HTML:		 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>sub</span><span class="token punctuation">&gt;</span></span>标记文本<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>sub</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><hr> <ol start="6"><li>下划线</li></ol> <div class="language-html extra-class"><pre class="language-html"><code>Markdown:	      _下划线_
+
+  HTML:		    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>u</span><span class="token punctuation">&gt;</span></span>下划线<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>u</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><p>有些Markdown编辑器选择将下划线去掉，与星号&quot;*&quot;等效为斜体</p> <ol start="7"><li>删除线</li></ol> <div class="language-html extra-class"><pre class="language-html"><code>Markdown:	      ~~删除线~~		   (shift + Esc下面的键)
+
+  HTML:		   <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>del</span><span class="token punctuation">&gt;</span></span>删除线<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>del</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><p>样例：<s>魔</s>膜法师</p> <ol start="8"><li>标记文本</li></ol> <div class="language-html extra-class"><pre class="language-html"><code>Markdown:	     ==标记文本==
+
+  HTML:		 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>mark</span><span class="token punctuation">&gt;</span></span>标记文本<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>mark</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><p>样例： <mark>标记文本</mark></p> <hr> <ol start="9"><li>行内代码</li></ol> <div class="language-html extra-class"><pre class="language-html"><code>Markdown:	      `行内代码`		      (Esc下面的键)
+
+  HTML:		 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>code</span><span class="token punctuation">&gt;</span></span>行内代码<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>code</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><p>样例：<code>行内代码</code></p> <ol start="10"><li>代码区块</li></ol> <div class="language-html extra-class"><pre class="language-html"><code>Markdown:	     	```html		   (Esc下面的键,大小写均可)	
+			代码区块		   (html位置可以换成其他的代码格式) 	
+			```		   (用于高亮相应的文本)
+      		 或 ：    
+		      （四个空格/两个tab）代码区块
+				
+  HTML:		       <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>pre</span><span class="token punctuation">&gt;</span></span>代码区块<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>pre</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><ol start="11"><li>区块引用</li></ol> <div class="language-html extra-class"><pre class="language-html"><code>Markdown:		&gt; 一级引用
+			&gt;&gt; 二级引用
+            
+  HTML：			<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>blockquote</span><span class="token punctuation">&gt;</span></span>
+			 一级引用
+			 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>blockquote</span><span class="token punctuation">&gt;</span></span>
+			  二级引用
+			 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>blockquote</span><span class="token punctuation">&gt;</span></span>
+			<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>blockquote</span><span class="token punctuation">&gt;</span></span>  	
+</code></pre></div><p>显示效果为段落前加竖线，可以用于文章前后的说明和引用</p> <p>引用和列表都是可以嵌套使用的</p> <h3 id="插入"><a href="#插入" class="header-anchor">#</a> 插入</h3> <ol><li>链接插入</li></ol> <div class="language-html extra-class"><pre class="language-html"><code>  [链接名](链接 &quot;链接提示&quot;)
+  
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>链接</span><span class="token punctuation">&gt;</span></span> 直接显示超链接
+</code></pre></div><ol start="2"><li>图片/视频插入</li></ol> <div class="language-html extra-class"><pre class="language-html"><code>Markdown:	     ![图片名](图片链接 &quot;备注&quot;)
+
+  HTML:		     <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>img</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>图片链接<span class="token punctuation">&quot;</span></span> <span class="token attr-name">alt</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>备注<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><p>样例：
+<img src="/images/benghuai3.png" alt="崩三" title="崩三"> <strong>注意地址层级用&quot;/&quot;，本地根目录为source文件夹。</strong></p> <p>  一般的Markdown编辑器无法获取权限访问本地目录，为了解决这个问题，这里要引入一个新的工具：图床。将需要展示的图片上传到服务器，再填写服务器返回的链接，将Markdown编辑器作为浏览器来使用。</p> <ol start="3"><li>引用写法</li></ol> <p>为了后期维护的方便，通常对链接进行引用：</p> <div class="language-html extra-class"><pre class="language-html"><code>[链接名][链接标志]
+
+//在下文进行链接标志的解释
+
+[链接标志]：链接 &quot;链接解释&quot;
+</code></pre></div><hr> <h3 id="段落"><a href="#段落" class="header-anchor">#</a> 段落</h3> <p>  一个Markdown段落是由一个或多个连续的文本行组成，它的前后要有一个以上的空行（在Markdown中，若显示上为空则视为一个空行，即不能使用连续的空格和制表符来进行缩进和换行）</p> <ol><li>空格缩进</li></ol> <div class="language-html extra-class"><pre class="language-html"><code><span class="token entity" title="&amp;emsp;">&amp;emsp;</span>
+</code></pre></div><ol start="2"><li>半空格缩进</li></ol> <div class="language-html extra-class"><pre class="language-html"><code><span class="token entity" title="&amp;ensp;">&amp;ensp;</span>
+</code></pre></div><ol start="3"><li>段落标记</li></ol> <div class="language-html extra-class"><pre class="language-html"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;</span></span>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><ol start="4"><li>换行标记</li></ol> <div class="language-html extra-class"><pre class="language-html"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>br</span><span class="token punctuation">/&gt;</span></span> 或 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>br</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><ol start="5"><li>分割线</li></ol> <div class="language-bash extra-class"><pre class="language-bash"><code>***
+---
+___
+</code></pre></div><p>可以在一行中使用三个或以上的星号、减号和底线来建立分割线（在符号中间可以插入任意空格）</p> <h3 id="转义字符"><a href="#转义字符" class="header-anchor">#</a> 转义字符</h3> <p>Markdown还支持以下符号前加“\”来帮助插入普通的符号</p> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token punctuation">\</span>反斜线
+`反引号
+*星号
+_底线
+<span class="token punctuation">{</span><span class="token punctuation">}</span>花括号
+<span class="token punctuation">[</span><span class="token punctuation">]</span>方括号
+<span class="token punctuation">(</span><span class="token punctuation">)</span>括号
+<span class="token comment">#井号</span>
++加号
+-减号
+.英文句点
+！感叹号
+</code></pre></div><hr> <h2 id="五、markdown进阶语法"><a href="#五、markdown进阶语法" class="header-anchor">#</a> 五、Markdown进阶语法</h2> <p>Markdown有许多扩展语法来帮助更好地写作，但并非所有编译器都适配。</p> <h3 id="yaml题头"><a href="#yaml题头" class="header-anchor">#</a> YAML题头</h3> <p>YAML用于定义文章属性(标签)，与Jason作用类似，常用于博客写作。</p> <div class="language-html extra-class"><pre class="language-html"><code>---
+title: 
+summary: 
+tag: 
+---
+</code></pre></div><p>写在文章开头，作为文章的标签。</p> <hr> <h3 id="注脚"><a href="#注脚" class="header-anchor">#</a> 注脚</h3> <div class="language- extra-class"><pre class="language-text"><code>需注释文本[^注脚标志]
+
+
+[^注脚标志]：注释
+</code></pre></div><hr> <h3 id="书名强调"><a href="#书名强调" class="header-anchor">#</a> 书名强调</h3> <div class="language- extra-class"><pre class="language-text"><code>&quot;&quot;《书名》&quot;&quot;
+</code></pre></div><p>用处不多，常可以被斜体、加粗替代</p> <hr> <h3 id="缩写"><a href="#缩写" class="header-anchor">#</a> 缩写</h3> <div class="language-html extra-class"><pre class="language-html"><code>Markdown：	*[HTML]:Hypertext Markup Language
+
+  HTML：		<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>abbr</span> <span class="token attr-name">title</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>Hypertext Markup Language<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>HTTP<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>abbr</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><p>样例：<abbr title="Hypertext Markup Language">HTTP</abbr></p> <p>Markdown写法可以进行复用，在多处进行备注，注意要在备注字两边加上空格。</p> <hr> <h3 id="自定义div容器"><a href="#自定义div容器" class="header-anchor">#</a> 自定义div容器</h3> <div class="language- extra-class"><pre class="language-text"><code>Markdown：		:::类名
+			saljashfajfslajd
+			:::
+                
+                
+  HTML：			&lt;div class=&quot;类名&quot;&gt;
+			 &lt;p&gt;
+			  saljashfajfslajd
+			 &lt;/p&gt;
+			&lt;/div&gt;
+</code></pre></div><hr> <h3 id="表格"><a href="#表格" class="header-anchor">#</a> 表格</h3> <div class="language- extra-class"><pre class="language-text"><code>|表头1|表头2|表头3|
+|:----|:---:|----:|
+|内容|内容|内容|
+</code></pre></div><p>第二行表示表格的权重，冒号在哪边表示哪边对齐。&quot;-&quot;表示表格权重，至少有一个。</p> <hr> <h3 id="emoji表情"><a href="#emoji表情" class="header-anchor">#</a> emoji表情</h3> <div class="language- extra-class"><pre class="language-text"><code>:smile:
+</code></pre></div><p>样例：😄</p> <p>其余表情自行查找</p> <hr> <h3 id="todolist"><a href="#todolist" class="header-anchor">#</a> Todolist</h3> <div class="language- extra-class"><pre class="language-text"><code>- 一天的任务
+	-[x]吃饭
+	-[]睡觉
+    
+[]:未完成		[x]:已完成
+</code></pre></div><p>一般写在无序列表里</p> <hr> <h3 id="latex"><a href="#latex" class="header-anchor">#</a> LaTeX</h3> <p>常用于学术排版，比word强大。</p></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">上次更新:</span> <span class="time">6/13/2020, 2:12:36 AM</span></div></footer> <div class="page-nav"><p class="inner"><!----> <span class="next"><a href="/blog/view/tools/ps切图.html">
+        Photoshop切图
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/blog/assets/js/app.32e238ed.js" defer></script><script src="/blog/assets/js/3.2f19725b.js" defer></script><script src="/blog/assets/js/2.82a5f09e.js" defer></script><script src="/blog/assets/js/32.bd629c47.js" defer></script>
+  </body>
+</html>

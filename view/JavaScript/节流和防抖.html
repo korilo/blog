@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>节流和防抖</title>
+    <meta name="generator" content="VuePress 1.4.1">
+    <link rel="icon" href="/blog/assets/img/favicon.ico">
+    <meta name="description" content="vuepress前端博客">
+    <meta name="keywords" content="vuepress,前端学习">
+    <meta name="author" content="陈大彬，korilo">
+    <link rel="preload" href="/blog/assets/css/0.styles.4f44df26.css" as="style"><link rel="preload" href="/blog/assets/js/app.32e238ed.js" as="script"><link rel="preload" href="/blog/assets/js/3.2f19725b.js" as="script"><link rel="preload" href="/blog/assets/js/2.82a5f09e.js" as="script"><link rel="preload" href="/blog/assets/js/11.ecc59e47.js" as="script"><link rel="prefetch" href="/blog/assets/js/10.bbf9877c.js"><link rel="prefetch" href="/blog/assets/js/12.5b182a76.js"><link rel="prefetch" href="/blog/assets/js/13.2d38621d.js"><link rel="prefetch" href="/blog/assets/js/14.d249530b.js"><link rel="prefetch" href="/blog/assets/js/15.2aa52300.js"><link rel="prefetch" href="/blog/assets/js/16.f9eaf58c.js"><link rel="prefetch" href="/blog/assets/js/17.f39e6ad9.js"><link rel="prefetch" href="/blog/assets/js/18.99525acd.js"><link rel="prefetch" href="/blog/assets/js/19.48163c59.js"><link rel="prefetch" href="/blog/assets/js/20.ea0a7462.js"><link rel="prefetch" href="/blog/assets/js/21.69146ce8.js"><link rel="prefetch" href="/blog/assets/js/22.b0760f24.js"><link rel="prefetch" href="/blog/assets/js/23.11c90d8b.js"><link rel="prefetch" href="/blog/assets/js/24.6ead4d73.js"><link rel="prefetch" href="/blog/assets/js/25.c4d2ee63.js"><link rel="prefetch" href="/blog/assets/js/26.81237c9b.js"><link rel="prefetch" href="/blog/assets/js/27.e5346f74.js"><link rel="prefetch" href="/blog/assets/js/28.80c310dc.js"><link rel="prefetch" href="/blog/assets/js/29.2c323076.js"><link rel="prefetch" href="/blog/assets/js/30.0cbd27a3.js"><link rel="prefetch" href="/blog/assets/js/31.058054c0.js"><link rel="prefetch" href="/blog/assets/js/32.bd629c47.js"><link rel="prefetch" href="/blog/assets/js/33.0a8b2762.js"><link rel="prefetch" href="/blog/assets/js/34.51adae37.js"><link rel="prefetch" href="/blog/assets/js/35.8eedf07e.js"><link rel="prefetch" href="/blog/assets/js/36.7cade9f9.js"><link rel="prefetch" href="/blog/assets/js/4.12ca4bcd.js"><link rel="prefetch" href="/blog/assets/js/5.387d7868.js"><link rel="prefetch" href="/blog/assets/js/6.2e56a599.js"><link rel="prefetch" href="/blog/assets/js/7.9b99ded5.js"><link rel="prefetch" href="/blog/assets/js/8.b1e367d9.js"><link rel="prefetch" href="/blog/assets/js/9.9341faa0.js">
+    <link rel="stylesheet" href="/blog/assets/css/0.styles.4f44df26.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/blog/" class="home-link router-link-active"><img src="/blog/assets/img/favicon.ico" alt="" class="logo"> <!----></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Html" class="dropdown-title"><span class="title">Html</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/view/html/html.html" class="nav-link">
+ 标签语义化
+</a></li><li class="dropdown-item"><!----> <a href="/blog/view/html/trick.html" class="nav-link">
+ 细节知识
+</a></li><li class="dropdown-item"><!----> <a href="/blog/view/html/canvas.html" class="nav-link">
+ Canvas
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Css" class="dropdown-title"><span class="title">Css</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/view/css/selector.html" class="nav-link">
+ css选择器
+</a></li><li class="dropdown-item"><!----> <a href="/blog/view/css/rule.html" class="nav-link">
+ css指令
+</a></li><li class="dropdown-item"><!----> <a href="/blog/view/css/box-model.html" class="nav-link">
+ 盒子模型
+</a></li><li class="dropdown-item"><!----> <a href="/blog/view/css/attribute-computed.html" class="nav-link">
+ css属性计算过程
+</a></li><li class="dropdown-item"><!----> <a href="/blog/view/css/stream.html" class="nav-link">
+ 文档流
+</a></li><li class="dropdown-item"><!----> <a href="/blog/view/css/float.html" class="nav-link">
+ 浮动细节
+</a></li><li class="dropdown-item"><!----> <a href="/blog/view/css/flex.html" class="nav-link">
+ flex布局
+</a></li><li class="dropdown-item"><!----> <a href="/blog/view/css/mobile.html" class="nav-link">
+ 移动端问题
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="JavaScript" class="dropdown-title"><span class="title">JavaScript</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/view/JavaScript/数据操作.html" class="nav-link">
+ 数据操作
+</a></li><li class="dropdown-item"><!----> <a href="/blog/view/JavaScript/节流和防抖.html" class="nav-link">
+ 节流和防抖
+</a></li><li class="dropdown-item"><!----> <a href="/blog/view/JavaScript/es6.html" class="nav-link">
+ ES6语法
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Vue" class="dropdown-title"><span class="title">Vue</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/view/vue/transition.html" class="nav-link">
+ transition组件
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="拓展" class="dropdown-title"><span class="title">拓展</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/view/tools/markdown.html" class="nav-link">
+ Markdown
+</a></li><li class="dropdown-item"><!----> <a href="/blog/view/tools/ps切图.html" class="nav-link">
+ Ps切图
+</a></li></ul></div></div><div class="nav-item"><a href="/blog/" class="nav-link">
+ Home
+</a></div><div class="nav-item"><a href="/blog/view/about/about.html" class="nav-link">
+ About
+</a></div> <a href="https://github.com/korilo" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Html" class="dropdown-title"><span class="title">Html</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/view/html/html.html" class="nav-link">
+ 标签语义化
+</a></li><li class="dropdown-item"><!----> <a href="/blog/view/html/trick.html" class="nav-link">
+ 细节知识
+</a></li><li class="dropdown-item"><!----> <a href="/blog/view/html/canvas.html" class="nav-link">
+ Canvas
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Css" class="dropdown-title"><span class="title">Css</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/view/css/selector.html" class="nav-link">
+ css选择器
+</a></li><li class="dropdown-item"><!----> <a href="/blog/view/css/rule.html" class="nav-link">
+ css指令
+</a></li><li class="dropdown-item"><!----> <a href="/blog/view/css/box-model.html" class="nav-link">
+ 盒子模型
+</a></li><li class="dropdown-item"><!----> <a href="/blog/view/css/attribute-computed.html" class="nav-link">
+ css属性计算过程
+</a></li><li class="dropdown-item"><!----> <a href="/blog/view/css/stream.html" class="nav-link">
+ 文档流
+</a></li><li class="dropdown-item"><!----> <a href="/blog/view/css/float.html" class="nav-link">
+ 浮动细节
+</a></li><li class="dropdown-item"><!----> <a href="/blog/view/css/flex.html" class="nav-link">
+ flex布局
+</a></li><li class="dropdown-item"><!----> <a href="/blog/view/css/mobile.html" class="nav-link">
+ 移动端问题
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="JavaScript" class="dropdown-title"><span class="title">JavaScript</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/view/JavaScript/数据操作.html" class="nav-link">
+ 数据操作
+</a></li><li class="dropdown-item"><!----> <a href="/blog/view/JavaScript/节流和防抖.html" class="nav-link">
+ 节流和防抖
+</a></li><li class="dropdown-item"><!----> <a href="/blog/view/JavaScript/es6.html" class="nav-link">
+ ES6语法
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Vue" class="dropdown-title"><span class="title">Vue</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/view/vue/transition.html" class="nav-link">
+ transition组件
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="拓展" class="dropdown-title"><span class="title">拓展</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/view/tools/markdown.html" class="nav-link">
+ Markdown
+</a></li><li class="dropdown-item"><!----> <a href="/blog/view/tools/ps切图.html" class="nav-link">
+ Ps切图
+</a></li></ul></div></div><div class="nav-item"><a href="/blog/" class="nav-link">
+ Home
+</a></div><div class="nav-item"><a href="/blog/view/about/about.html" class="nav-link">
+ About
+</a></div> <a href="https://github.com/korilo" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav>  <ul class="sidebar-links"><li><a href="/blog/view/JavaScript/数据操作.html" class="sidebar-link">数据操作</a></li><li><a href="/blog/view/JavaScript/节流和防抖.html" class="active sidebar-link">节流和防抖</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/blog/view/JavaScript/节流和防抖.html#节流-throttle" class="sidebar-link">节流 - throttle</a></li><li class="sidebar-sub-header"><a href="/blog/view/JavaScript/节流和防抖.html#防抖-debounce" class="sidebar-link">防抖 - debounce</a></li></ul></li><li><a href="/blog/view/JavaScript/es6.html" class="sidebar-link">es6语法</a></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h2 id="节流-throttle"><a href="#节流-throttle" class="header-anchor">#</a> 节流 - throttle</h2> <p>节流：<strong>在规定时间内</strong>，只让函数触发的第一次生效，后面触发的函数不生效</p> <p>当频繁重复触发一个函数时，会对性能有很大压力，这时可以设置一个延时函数来减少事件函数的调用频率，达到性能提升的效果</p> <p>应用：限制发送请求的时间间隔</p> <p>实现：闭包，条件判断</p> <p>闭包：防止条件判断的LastTime变量污染全局命名空间，也防止每次调用初始化LastTime</p> <p>条件判断：利用Date.now()计算与上次执行函数时的时间戳的时间差，中间调用函数将无法执行，直到时间差大于delay才能再次执行函数，此时更新lastTime</p> <p>初始化的lastTime可以是（当前时间-delay）之前的时间戳，最方便的还是设置0</p> <div class="language-JavaScript extra-class"><pre class="language-javascript"><code>    <span class="token keyword">function</span> <span class="token function">throttle</span><span class="token punctuation">(</span><span class="token parameter">fn<span class="token punctuation">,</span> delay</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token comment">//初始化时间为0，保证第一次能触发</span>
+        <span class="token keyword">let</span> lastTime <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+        <span class="token comment">//利用闭包保存lastTime</span>
+        <span class="token comment">//保证每次调用不会初始化lastTime</span>
+        <span class="token keyword">return</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+            <span class="token keyword">let</span> nowTime <span class="token operator">=</span> Date<span class="token punctuation">.</span><span class="token function">now</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token keyword">if</span><span class="token punctuation">(</span>nowTime<span class="token operator">-</span>lastTime <span class="token operator">&gt;</span> delay<span class="token punctuation">)</span><span class="token punctuation">{</span>
+                <span class="token comment">//修正this指向</span>
+                <span class="token function">fn</span><span class="token punctuation">.</span><span class="token function">call</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+                <span class="token comment">//执行后更新lastTime</span>
+                lastTime <span class="token operator">=</span> nowTime<span class="token punctuation">;</span>
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+</code></pre></div><hr> <br> <br> <h2 id="防抖-debounce"><a href="#防抖-debounce" class="header-anchor">#</a> 防抖 - debounce</h2> <p>防抖：让一个频繁触发的函数，<strong>在规定时间内</strong>只让最后一次生效，前面的不生效</p> <p>当短时间内频繁触发函数，我们只关注最后一次的结果时，可以使用防抖来节约性能</p> <p>应用：输入验证,限制请求</p> <p>实现：闭包，延时函数setTimeout</p> <p>闭包：防止延时函数的timer变量污染全局命名空间，也防止每次调用初始化timer</p> <p>延时函数：当固定时间内再次调用函数，则会覆盖timer,导致上一个函数没有执行</p> <div class="language-JavaScript extra-class"><pre class="language-javascript"><code>    <span class="token keyword">function</span> <span class="token function">debounce</span><span class="token punctuation">(</span><span class="token parameter">fn<span class="token punctuation">,</span> delay</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token keyword">let</span> timer <span class="token operator">=</span> <span class="token keyword">null</span><span class="token punctuation">;</span>
+        <span class="token comment">//利用闭包保存timer</span>
+        <span class="token comment">//保证每次调用不会初始化lastTime</span>
+        <span class="token keyword">return</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+            <span class="token keyword">if</span><span class="token punctuation">(</span>timer<span class="token punctuation">)</span><span class="token punctuation">{</span>
+                <span class="token function">clearTimeout</span><span class="token punctuation">(</span>timer<span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token punctuation">}</span>
+            <span class="token comment">//更新timer</span>
+            timer <span class="token operator">=</span> <span class="token function">setTimeout</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">=&gt;</span><span class="token punctuation">{</span>
+                <span class="token function">fn</span><span class="token punctuation">.</span><span class="token function">call</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token punctuation">}</span><span class="token punctuation">,</span>delay<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+</code></pre></div></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">上次更新:</span> <span class="time">6/13/2020, 2:12:36 AM</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/blog/view/JavaScript/数据操作.html" class="prev">
+        数据操作
+      </a></span> <span class="next"><a href="/blog/view/JavaScript/es6.html">
+        es6语法
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/blog/assets/js/app.32e238ed.js" defer></script><script src="/blog/assets/js/3.2f19725b.js" defer></script><script src="/blog/assets/js/2.82a5f09e.js" defer></script><script src="/blog/assets/js/11.ecc59e47.js" defer></script>
+  </body>
+</html>
